@@ -11,4 +11,8 @@ class TestGame < MiniTest::Test
     assert_equal("scissors", Game.play("scissors", "paper"))
   end
 
+  def test_result_is_a_draw()
+    assert_equal("Draw", Game.play("rock", "rock"))
+  end
+
 end
