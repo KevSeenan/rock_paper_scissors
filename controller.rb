@@ -5,6 +5,7 @@ require_relative('./models/rock_paper_scissors.rb')
 also_reload('./models/*')
 
 get '/play/:hand1/:hand2' do
-  game = Game.new(params[:hand1], params[:hand2])
-    return "Rock Wins!!"
+  game = Game.play(params[:hand1], params[:hand2])
+  @result = game.capitalize()
+  erb(:result)
 end
