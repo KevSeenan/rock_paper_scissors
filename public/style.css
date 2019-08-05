@@ -1,0 +1,40 @@
+body{
+  font-family: fantasy;
+  border-style: ridge;
+}
+
+.welcome {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+img {
+  padding-left: 525px;
+}
+
+ul {
+  background-color: LightGrey;
+}
+
+li {
+  text-size: 50px;
+}
+
+#result {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* I was wanting to playabout and get the result flashing so found the animation
+ code above on stackoverflow */
