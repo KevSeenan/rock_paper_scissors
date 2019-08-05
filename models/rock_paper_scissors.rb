@@ -20,7 +20,7 @@ class Game
       when hand1 == "scissors" && hand2 == "rock"
         return "rock"
       when hand1 == hand2
-        return "Draw"
+        return "draw"
 
       end
     end
