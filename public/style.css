@@ -20,10 +20,12 @@ img {
 
 ul {
   background-color: LightGrey;
+  list-style-type: none;
 }
 
 li {
   text-size: 50px;
+
 }
 
 #result {
